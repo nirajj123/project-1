@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "efe93741-4277-4672-9660-33488673cb08",
+		"name": "Cart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23904404"
+	},
+	"item": [
+		{
+			"name": "user Login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\":\"yash1235@gmail.com\",\r\n    \"Password\":\"main12354\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/user/Login",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"user",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/Admin/product/del/6360ee6fa00583aa39aa6326",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Admin",
+						"product",
+						"del",
+						"6360ee6fa00583aa39aa6326"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Name\":\"mixer\",\r\n\"Catagory\":\"kichen-tools\",\r\n\"Link\":\" main/main.jpg\",\r\n\"Desc\":\"lorem ipsum\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/admin/Product/new",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"admin",
+						"Product",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblNjaGVtYSI6eyJFbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsIlBhc3N3b3JkIjoiMTIzNDU2In0sImlhdCI6MTY2NzM3MTA4NX0.yHiqF9E6r1DZ-Nqn5o4xunc_ZbxBZXtPRBpdZgqCFVs\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/Admin/Login",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Admin",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Name\":\"fan\",\r\n\"Catagory\":\"fan\",\r\n\"Link\":\" main/main.jpg\",\r\n\"Desc\":\"lorem ipsum\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/admin/Product/Edit/360ef20886a1d7a1bdc2db1",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"admin",
+						"Product",
+						"Edit",
+						"360ef20886a1d7a1bdc2db1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product by catagory",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Catagory\": \"electric\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/Admin/Category/Read",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Admin",
+						"Category",
+						"Read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete product by catagory",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Catagory\": \"electric\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/Admin/Category/Delete",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Admin",
+						"Category",
+						"Delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/admin/Product/All",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"admin",
+						"Product",
+						"All"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user SignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"First_name\":\"yash\",\r\n\"Last_name\":\"naliyapara\",\r\n\"Email\":\"yash1235@gmail.com\",\r\n\"Password\":\"main12354\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/user/SignUp",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"user",
+						"SignUp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignIn admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/Admin/Login",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"Admin",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Admin",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
